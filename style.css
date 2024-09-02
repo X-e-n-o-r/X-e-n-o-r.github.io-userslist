@@ -1,0 +1,110 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+#ageFilter {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 10px auto;
+}
+
+#userList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.user-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.user-card img {
+    border: 2px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.user-info {
+    margin-bottom: 10px;
+}
+
+.user-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.photo-upload input[type="file"] {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    #userList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-card {
+        width: 80%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .user-card {
+        padding: 15px;
+    }
+
+    .user-info p {
+        font-size: 14px;
+    }
+
+    #ageFilter {
+        width: 90%;
+    }
+
+    .photo-upload input[type="file"] {
+        padding: 8px;
+    }
+}
